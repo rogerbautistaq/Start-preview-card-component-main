@@ -1,0 +1,96 @@
+:root{
+    --font-family-is: 'Inter', sans-serif;
+    --font-family-ld: 'Lexend Deca', sans-serif;
+    
+    /* ### Primary*/
+    --Very-dark-blue : hsl(233, 47%, 7%);
+    --Dark-desaturated-blue : hsl(244, 38%, 16%);
+    --Soft-violet : hsl(277, 64%, 61%);
+    
+    /*### Neutral*/
+    
+    --White : hsl(0, 0%, 100%);
+    --Slightly-transparent-white : hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white : hsla(0, 0%, 100%, 0.6);
+    
+    /* ## Typography*/
+    
+    /*### Body Copy*/
+    --Font-size: 15px;
+    }
+    body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: var(--Very-dark-blue);
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+    .contenedor{
+        width: 1020px;
+        margin: 0 auto;
+    }
+    .envoltura{
+        background-color: var(--Dark-desaturated-blue);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 2rem;
+    }
+    .imagen img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .imagen {
+        position: relative;
+    }
+    .imagen::after{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: var(--Soft-violet);
+        opacity: 0.6;
+    }
+    .texto {
+        padding: 13%;
+        font-family: var(--font-family-is);
+    }
+    
+    .titulo {
+        color: var(--White);
+        font-weight: 700;
+        padding-bottom: 22px;
+    }
+    .titulo span{
+        color: var(--Soft-violet);
+    }
+    
+    .subtitulo {
+        color: var(--White);
+        line-height: 1.8;
+    }
+    
+    .caja_texto {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding-top: 60px;
+        font-family: var(--font-family-ld);
+    }
+    
+    .caja_texto p.numeros {
+        color: var(--White);
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+    
+    .caja_texto p {
+        color: var(--White);
+    }

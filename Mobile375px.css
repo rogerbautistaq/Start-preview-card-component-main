@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+.envoltura{
+    grid-template-columns: 1fr;
+}
+
+.imagen {
+    order: -1;
+}
+
+.texto {
+    padding: 12% 8%;
+}
+
+.titulo {
+    font-size: 23px;
+    line-height: 1.4;
+}
+
+.caja_texto {
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.caja_texto div {
+    margin-top: 15px;
+}
